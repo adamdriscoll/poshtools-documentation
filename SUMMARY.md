@@ -27,7 +27,7 @@
   * [PSPack.exe](powershell-pro-tools-documentation/packaging/pspackexe.md)
 * [User Interface Design](powershell-pro-tools-documentation/code-conversion/user-interface-design.md)
   * [Building a GUI with WPF in Visual Studio](powershell-pro-tools-documentation/code-conversion/user-interface-design/building-a-gui-with-wpf-in-visual-studio.md)
-  * Building a GUI with Windows Forms in Visual Studio
+  * [Building a GUI with Windows Forms in Visual Studio](powershell-pro-tools-documentation/code-conversion/user-interface-design/building-a-gui-with-windows-forms-in-visual-studio.md)
 * [PowerShell Module](powershell-pro-tools-documentation/powershell-module.md)
   * [ConvertTo-CSharp](/powershell-pro-tools-documentation/powershell-module/convertto-csharp.md)
   * [ConvertTo-PowerShell](/powershell-pro-tools-documentation/powershell-module/convertto-powershell.md)
