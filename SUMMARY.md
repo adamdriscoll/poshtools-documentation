@@ -25,17 +25,14 @@
   * [Package as Executable](powershell-pro-tools-documentation/packaging/package-as-executable.md)
   * [Packaging in Visual Studio Code](powershell-pro-tools-documentation/packaging/packaging-in-visual-studio-code.md)
   * [PSPack.exe](powershell-pro-tools-documentation/packaging/pspackexe.md)
-  * [Merge-Script](powershell-pro-tools-documentation/packaging/merge-script.md)
 * [User Interface Design](powershell-pro-tools-documentation/code-conversion/user-interface-design.md)
   * [Building a GUI with WPF in Visual Studio](powershell-pro-tools-documentation/code-conversion/user-interface-design/building-a-gui-with-wpf-in-visual-studio.md)
   * Building a GUI with Windows Forms in Visual Studio
-* PowerShell Module
+* [PowerShell Module](powershell-pro-tools-documentation/powershell-module.md)
   * [ConvertTo-CSharp](/powershell-pro-tools-documentation/powershell-module/convertto-csharp.md)
   * [ConvertTo-PowerShell](/powershell-pro-tools-documentation/powershell-module/convertto-powershell.md)
   * [Merge-Script](/powershell-pro-tools-documentation/powershell-module/merge-script.md)
   * [Install-PoshProToolsLicense](/powershell-pro-tools-documentation/powershell-module/install-poshprotoolslicense.md)
 * [Code Conversion](powershell-pro-tools-documentation/code-conversion.md)
   * [Paste As](powershell-pro-tools-documentation/code-conversion/paste-as.md)
-
-
 
