@@ -31,6 +31,9 @@
   * Building a GUI with Windows Forms in Visual Studio
 * PowerShell Module
   * [ConvertTo-CSharp](/powershell-pro-tools-documentation/powershell-module/convertto-csharp.md)
+  * [ConvertTo-PowerShell](/powershell-pro-tools-documentation/powershell-module/convertto-powershell.md)
+  * [Merge-Script](/powershell-pro-tools-documentation/powershell-module/merge-script.md)
+  * [Install-PoshProToolsLicense](/powershell-pro-tools-documentation/powershell-module/install-poshprotoolslicense.md)
 * [Code Conversion](powershell-pro-tools-documentation/code-conversion.md)
   * [Paste As](powershell-pro-tools-documentation/code-conversion/paste-as.md)
 
