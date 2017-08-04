@@ -29,6 +29,10 @@
 * [User Interface Design](powershell-pro-tools-documentation/code-conversion/user-interface-design.md)
   * [Building a GUI with WPF in Visual Studio](powershell-pro-tools-documentation/code-conversion/user-interface-design/building-a-gui-with-wpf-in-visual-studio.md)
   * Building a GUI with Windows Forms in Visual Studio
+* PowerShell Module
+  * [ConvertTo-CSharp](/powershell-pro-tools-documentation/powershell-module/convertto-csharp.md)
 * [Code Conversion](powershell-pro-tools-documentation/code-conversion.md)
   * [Paste As](powershell-pro-tools-documentation/code-conversion/paste-as.md)
+
+
 
