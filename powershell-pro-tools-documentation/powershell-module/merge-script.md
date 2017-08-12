@@ -17,7 +17,7 @@ Merge-Script -Script <String> [-OutputPath <String>] [-Bundle] [-Package] [-Obfu
 
 Merge-Script -Config <Hashtable>
 
-Merge-Script -ConfigFile <String> 
+Merge-Script -ConfigFile <String>
 ```
 
 ## DESCRIPTION
