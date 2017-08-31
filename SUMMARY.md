@@ -20,6 +20,7 @@
 ## Contributing to PowerShell Tools
 
 * [Getting Started](contributing-to-powershell-tools/getting-started.md)
+* [Architecture](contributing-to-powershell-tools/architecture.md)
 * [Project Structure](contributing-to-powershell-tools/project-structure.md)
 
 ## PowerShell Pro Tools Documentation
