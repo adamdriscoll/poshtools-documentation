@@ -41,6 +41,12 @@
   * [Install-PoshProToolsLicense](/powershell-pro-tools-documentation/powershell-module/install-poshprotoolslicense.md)
   * [about\_MergeScriptConfig](powershell-pro-tools-documentation/powershell-module/aboutmergescriptconfig.md)
   * [Visual Studio Code Commands](powershell-pro-tools-documentation/powershell-module/visual-studio-code-commands.md)
+* [Universal Dashboard](powershell-pro-tools-documentation/universal-dashboard.md)
+  * [Formatting](powershell-pro-tools-documentation/universal-dashboard/formatting.md)
+  * [Charts](powershell-pro-tools-documentation/universal-dashboard/charts.md)
+  * [Monitors](powershell-pro-tools-documentation/universal-dashboard/monitors.md)
+  * [Tables](powershell-pro-tools-documentation/universal-dashboard/tables.md)
+  * [Grids](powershell-pro-tools-documentation/universal-dashboard/grids.md)
 * [Code Conversion](powershell-pro-tools-documentation/code-conversion.md)
   * [Paste As](powershell-pro-tools-documentation/code-conversion/paste-as.md)
 
