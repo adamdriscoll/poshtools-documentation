@@ -17,6 +17,11 @@
   * Syntax Highlighting
 * [Unit Test Adapter](unit-test-adapter.md)
 
+## Contributing to PowerShell Tools
+
+* [Getting Started](contributing-to-powershell-tools/getting-started.md)
+* [Project Structure](contributing-to-powershell-tools/project-structure.md)
+
 ## PowerShell Pro Tools Documentation
 
 * [Installation and Licensing](powershell-pro-tools-documentation/installation-and-configuration.md)
