@@ -47,6 +47,7 @@
   * [Monitors](powershell-pro-tools-documentation/universal-dashboard/monitors.md)
   * [Tables](powershell-pro-tools-documentation/universal-dashboard/tables.md)
   * [Grids](powershell-pro-tools-documentation/universal-dashboard/grids.md)
+  * [Multi-Page Dashboards](powershell-pro-tools-documentation/universal-dashboard/multi-page-dashboards.md)
 * [Code Conversion](powershell-pro-tools-documentation/code-conversion.md)
   * [Paste As](powershell-pro-tools-documentation/code-conversion/paste-as.md)
 
