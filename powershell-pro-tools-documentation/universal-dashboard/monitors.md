@@ -4,11 +4,15 @@ Monitors are special charts that track data over time. An example of a monitor m
 
 ## Creating a Monitor
 
-Monitors are created using the New-UDMonitor cmdlet. Some of the same options as the New-UDChart cmdlet are available on New-Monitor. It allows for Bar and Line chart. The below example script selects the current % processor time on the local machine and outputs the data using Out-UDMonitorData.  
+Monitors are created using the New-UDMonitor cmdlet. Some of the same options as the New-UDChart cmdlet are available on New-Monitor. It allows for Bar and Line chart. The below example script selects the current % processor time on the local machine and outputs the data using Out-UDMonitorData.
 
-`New-UdMonitor -Title "CPU (% processor time)" -Type Line -DataPointHistory 20 -RefreshInterval 5 -ChartBackgroundColor '#80FF6B63' -ChartBorderColor '#FFFF6B63'  -Endpoint {  
-          Get-Counter '\Processor(_Total)\% Processor Time' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty CounterSamples | Select-Object -ExpandProperty CookedValue | Out-UDMonitorData  
-}`
+```New-UdMonitor -Title "CPU (% processor time)" -Type Line -DataPointHistory 20 -RefreshInterval 5 -ChartBackgroundColor '#80FF6B63' -ChartBorderColor '#FFFF6B63'  -Endpoint {``
+
+```
+      Get-Counter '\Processor(_Total)\% Processor Time' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty CounterSamples | Select-Object -ExpandProperty CookedValue | Out-UDMonitorData
+```
+
+``}```
 
 The script produces a control like the chart below.
 
