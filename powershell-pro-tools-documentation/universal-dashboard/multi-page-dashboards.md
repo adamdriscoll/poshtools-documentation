@@ -24,3 +24,29 @@ Once you have created your multi-page dashboard, you will now have a hamburger m
 
 Since dashboards may often be used for display purposes only, you can also enable auto-cycling of pages. On New-UDDashboard, specify the CyclePages and CyclePagesInterval parameters. CyclePagesInterval is the number of seconds to wait while displaying a dashboard page.
 
+## Dynamic Pages
+
+Dynamic pages are created by specifying a page URL and an Endpoint. Unlike static pages, a dynamic page is generated every time the URL is hit. This means there is a slight performance penalty to a dynamic page but unlimited options of what you can do on that page. To create a basic dynamic page, use New-UDPage and the URL and Endpoint parameters. 
+
+This page can be reach by visiting: http://localhost/myPage/16 or any other number.
+
+```powershell
+New-UDPage -Url "/myPage/:number" -Endpoint {
+    param($number)
+
+    New-UDCard -Title "Page $number" -Id "PageCard"
+}
+```
+
+Any portion of the URL that is prefixed with a colon \(:\), is considered a variable. The value will be passed into the Endpoint script block via the param arguments. This means you can have multiple variables in a route. 
+
+```powershell
+New-UDPage -Url "/myPage/:number/:number2" -Endpoint {
+    param($number, $number2)
+
+    New-UDCard -Title "Page $number $number2" -Id "PageCard"
+}
+```
+
+
+
