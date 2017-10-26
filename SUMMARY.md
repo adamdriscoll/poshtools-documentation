@@ -52,6 +52,7 @@
 * [Charts](powershell-pro-tools-documentation/universal-dashboard/charts.md)
 * [Monitors](powershell-pro-tools-documentation/universal-dashboard/monitors.md)
 * [Tables](powershell-pro-tools-documentation/universal-dashboard/tables.md)
+* [Inputs](powershell-pro-tools-documentation/inputs.md)
 * [Grids](powershell-pro-tools-documentation/universal-dashboard/grids.md)
 * [Multi-Page Dashboards](powershell-pro-tools-documentation/universal-dashboard/multi-page-dashboards.md)
 
