@@ -26,9 +26,9 @@ Since dashboards may often be used for display purposes only, you can also enabl
 
 ## Dynamic Pages
 
-Dynamic pages are created by specifying a page URL and an Endpoint. Unlike static pages, a dynamic page is generated every time the URL is hit. This means there is a slight performance penalty to a dynamic page but unlimited options of what you can do on that page. To create a basic dynamic page, use New-UDPage and the URL and Endpoint parameters. 
+Dynamic pages are created by specifying a page URL and an Endpoint. Unlike static pages, a dynamic page is generated every time the URL is hit. This means there is a slight performance penalty to a dynamic page but unlimited options of what you can do on that page. To create a basic dynamic page, use New-UDPage and the URL and Endpoint parameters.
 
-This page can be reach by visiting: http://localhost/myPage/16 or any other number.
+This page can be reach by visiting: [http://localhost/myPage/16](http://localhost/myPage/16) or any other number.
 
 ```powershell
 New-UDPage -Url "/myPage/:number" -Endpoint {
@@ -38,7 +38,7 @@ New-UDPage -Url "/myPage/:number" -Endpoint {
 }
 ```
 
-Any portion of the URL that is prefixed with a colon \(:\), is considered a variable. The value will be passed into the Endpoint script block via the param arguments. This means you can have multiple variables in a route. 
+Any portion of the URL that is prefixed with a colon \(:\), is considered a variable. The value will be passed into the Endpoint script block via the param arguments. This means you can have multiple variables in a route.
 
 ```powershell
 New-UDPage -Url "/myPage/:number/:number2" -Endpoint {
@@ -48,5 +48,5 @@ New-UDPage -Url "/myPage/:number/:number2" -Endpoint {
 }
 ```
 
-
+You must have a single static page to serve as a home page or visiting you dashboard's home page will simply display a warning message. 
 
