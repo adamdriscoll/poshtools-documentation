@@ -18,7 +18,26 @@ New-UDInput -Title "User Data" -Endpoint {
 }
 ```
 
-The above input would produce the following card. 
+The above input would produce the following card.
 
 ![](/assets/new-udinput)
+
+New-UDInput currently generates textboxes and checkboxes. You can take any action you like within the Endpoint block. For example, you could look for a module in the PowerShell Gallery. 
+
+```powershell
+New-UDInput -Title "Module Info Locator" -Endpoint {
+    param($ModuleName) 
+
+    # Get a module from the gallery
+    $Module = Find-Module $ModuleName
+
+    # Output a new card based on that info
+    New-UDInputAction -Content @(
+        New-UDCard -Title "$ModuleName - $($Module.Version)" -Text $Module.Description
+    )
+}
+
+```
+
+
 
