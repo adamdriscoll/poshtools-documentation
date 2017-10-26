@@ -69,21 +69,19 @@ New-UDRow -Columns {
 
 You can also nest rows with in columns.
 
-`New-UDRow -Columns {                
-    New-UDColumn -Size 6 {`
-
-```
+```powershell
+New-UDRow -Columns {                
+    New-UDColumn -Size 6 {
         New-UDRow -Columns {
+New-UDColumn -Size 12 {                
+               }
+ }                
+       }
+}                
+    New-UDColumn -Size 6 {
+}                
+}
 ```
 
-`New-UDColumn -Size 12 {                
-               }`  
- `}                
-       }`
 
-`}                
-    New-UDColumn -Size 6 {`
-
-`}                
-}`
 
