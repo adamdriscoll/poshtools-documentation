@@ -54,14 +54,14 @@ New-UDRow -Columns {
 
 To create two equally sized columns, you could make them both 6 in size.
 
-`New-UDRow -Columns {              
-    New-UDColumn -Size 6 {`
-
-`}              
-    New-UDColumn -Size 6 {`
-
-`}              
-}`
+```powershell
+New-UDRow -Columns {              
+    New-UDColumn -Size 6 {
+}              
+    New-UDColumn -Size 6 {
+}              
+}
+```
 
 |  |  |
 | :--- | :--- |
@@ -69,21 +69,21 @@ To create two equally sized columns, you could make them both 6 in size.
 
 You can also nest rows with in columns.
 
-`New-UDRow -Columns {              
+`New-UDRow -Columns {                
     New-UDColumn -Size 6 {`
 
 ```
         New-UDRow -Columns {
 ```
 
-`New-UDColumn -Size 12 {              
+`New-UDColumn -Size 12 {                
                }`  
- `}              
+ `}                
        }`
 
-`}              
+`}                
     New-UDColumn -Size 6 {`
 
-`}              
+`}                
 }`
 
