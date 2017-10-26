@@ -50,3 +50,5 @@ New-UDPage -Url "/myPage/:number/:number2" -Endpoint {
 
 You must have a single static page to serve as a home page or visiting you dashboard's home page will simply display a warning message. 
 
+New-UDInputAction can be used to redirect to a dynamic page. See the documentation on [Inputs ](/powershell-pro-tools-documentation/inputs.md)for more information. 
+
