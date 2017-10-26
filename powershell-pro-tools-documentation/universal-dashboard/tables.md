@@ -6,12 +6,12 @@ The script below creates a new table with some information about the local machi
 
 ```powershell
 New-UdTable -Title "Server Information" -Headers @(" ", " ") -Endpoint {
-@{
-'Computer Name' = $env:COMPUTERNAME
-'Operating System' = (Get-CimInstance -ClassName Win32_OperatingSystem).Caption
-'Total Disk Space (C:)' = (Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DeviceID='C:'").Size / 1GB | ForEach-Object { "$([Math]::Round($_, 2)) GBs " }
-'Free Disk Space (C:)' = (Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DeviceID='C:'").FreeSpace / 1GB | ForEach-Object { "$([Math]::Round($_, 2)) GBs " }
-}.GetEnumerator() | Out-TableData -Property @("Name", "Value")
+    @{
+       'Computer Name' = $env:COMPUTERNAME
+       'Operating System' = (Get-CimInstance -ClassName Win32_OperatingSystem).Caption
+       'Total Disk Space (C:)' = (Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DeviceID='C:'").Size / 1GB | ForEach-Object { "$([Math]::Round($_, 2)) GBs " }
+       'Free Disk Space (C:)' = (Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DeviceID='C:'").FreeSpace / 1GB | ForEach-Object { "$([Math]::Round($_, 2)) GBs " }
+     }.GetEnumerator() | Out-TableData -Property @("Name", "Value")
 }
 ```
 
