@@ -2,29 +2,31 @@
 
 ## Formatting with Layouts
 
-Layouts provide a simple way to format dashboards into columns and rows. The New-UDLayout cmdlet has a Columns parameter to specify the number of columns in the layout. Based on the content of the layout, rows will be added whenever there are more items than columns. 
+Layouts provide a simple way to format dashboards into columns and rows. The New-UDLayout cmdlet has a Columns parameter to specify the number of columns in the layout. Based on the content of the layout, rows will be added whenever there are more items than columns.
 
-For example, a layout with three cards and three columns would be formatted like this. 
+For example, a layout with three cards and three columns would be formatted like this.
 
-`New-UDLayout -Columns 3 -Content {  
+```powershell
+New-UDLayout -Columns 3 -Content {  
     New-UDCard  
     New-UDCard  
     New-UDCard  
-}`
+}
+```
 
 |  |  |  |
 | :--- | :--- | :--- |
 
 
-If you were to specify more than three items in the content, another row would be added. 
+If you were to specify more than three items in the content, another row would be added.
 
-`New-UDLayout -Columns 3 -Content {  
-    New-UDCard  
-    New-UDCard  
-    New-UDCard  
-     New-UDCard   
-     New-UDCard  
-     New-UDCard  
+`New-UDLayout -Columns 3 -Content {    
+    New-UDCard    
+    New-UDCard    
+    New-UDCard    
+     New-UDCard     
+     New-UDCard    
+     New-UDCard    
 }`
 
 |  |  |  |
@@ -37,10 +39,10 @@ For more control over the format of your dashboard, you can use the New-UDRow an
 
 For example, the definition below would create a row with a single column that stretched the width of the page.
 
-`New-UDRow -Columns {        
+`New-UDRow -Columns {          
     New-UDColumn -Size 12 {`
 
-`}        
+`}          
 }`
 
 |  |
@@ -49,13 +51,13 @@ For example, the definition below would create a row with a single column that s
 
 To create two equally sized columns, you could make them both 6 in size.
 
-`New-UDRow -Columns {        
+`New-UDRow -Columns {          
     New-UDColumn -Size 6 {`
 
-`}        
+`}          
     New-UDColumn -Size 6 {`
 
-`}        
+`}          
 }`
 
 |  |  |
@@ -64,23 +66,21 @@ To create two equally sized columns, you could make them both 6 in size.
 
 You can also nest rows with in columns.
 
-`New-UDRow -Columns {        
+`New-UDRow -Columns {          
     New-UDColumn -Size 6 {`
 
 ```
         New-UDRow -Columns {
 ```
 
-`New-UDColumn -Size 12 {        
+`New-UDColumn -Size 12 {          
                }`  
- `}        
+ `}          
        }`
 
-`}        
+`}          
     New-UDColumn -Size 6 {`
 
-`}        
+`}          
 }`
-
-
 
