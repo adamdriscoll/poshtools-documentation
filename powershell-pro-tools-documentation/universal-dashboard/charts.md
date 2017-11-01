@@ -7,7 +7,7 @@ Charts can be created with the New-UDChart cmdlet. Charts can be either bar, lin
 A basic chart can be created by specifying the Title, Type and Endpoint.
 
 ```powershell
-New-UDChart -Title "Threads by Process" -Type Doughnut -RefreshInterval 5 -Endpoints {  
+New-UDChart -Title "Threads by Process" -Type Doughnut -RefreshInterval 5 -Endpoint {  
     Get-Process | ForEach-Object { [PSCustomObject]@{ Name = $_.Name; Threads = $.Threads.Count } } | Out-UDChartData -DataProperty "Threads" -LabelProperty "Name" -Options @{  
      legend = @{  
             display = $false  
