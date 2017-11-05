@@ -55,4 +55,5 @@
 * [Inputs](powershell-pro-tools-documentation/inputs.md)
 * [Grids](powershell-pro-tools-documentation/universal-dashboard/grids.md)
 * [Multi-Page Dashboards](powershell-pro-tools-documentation/universal-dashboard/multi-page-dashboards.md)
+* [REST APIs](powershell-pro-tools-documentation/rest-apis.md)
 

@@ -1,8 +1,8 @@
 # ![](/assets/import.png)PowerShell integration for Visual Studio.
 
-The PowerShell Tools for Visual Studio source code repository can be found on [GitHub](https://github.com/adamdriscoll/poshtools). 
+The PowerShell Tools for Visual Studio source code repository can be found on [GitHub](https://github.com/adamdriscoll/poshtools).
 
-The page contains all the documentation for PowerShell Tools for Visual Studio and it's extension, PowerShell Pro Tools for Visual Studio. To learn more about the PowerShell Pro Tools, visit [PoshTools.com](https://poshtools.com/). 
+The page contains all the documentation for PowerShell Tools for Visual Studio and it's extension, PowerShell Pro Tools for Visual Studio. To learn more about the PowerShell Pro Tools, visit [PoshTools.com](https://poshtools.com/).
 
 #### PowerShell Tools for Visual Studio Offers
 
@@ -23,6 +23,12 @@ The page contains all the documentation for PowerShell Tools for Visual Studio a
   * Packing into executables
   * Obfuscation
 * Code Conversion between C\# and PowerShell
+
+#### Universal Dashboard 
+
+* Create websites with PowerShell
+* Host in the command line, Azure and IIS
+* Create REST APIs with PowerShell
 
 
 
