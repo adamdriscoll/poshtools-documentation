@@ -10,7 +10,7 @@ To create a simple endpoint to return data, you can create an with the following
 
 ```powershell
 $Endpoint = New-UDEndpoint -Url "/process" -Method "GET" -Endpoint {
-    Get-Process
+    Get-Process | ForEach-Object { [PSCustomObject]@{ Name = $_.Name; ID=$_.ID} }  | ConvertTo-Json
 }
 Start-UDRestApi -Endpoint $Endpoint
 ```
@@ -31,7 +31,7 @@ For example, if you wanted to get a process by ID, you could specify the ID vari
 New-UDEndpoint -Url "/process/:id" -Method "GET" -Endpoint {
     param($Id)
 
-    Get-Process -Id $Id
+    Get-Process -Id $Id | ForEach-Object { [PSCustomObject]@{ Name = $_.Name; ID=$_.ID} }  | ConvertTo-Json
 }
 ```
 
@@ -67,7 +67,7 @@ Invoke-RestMethod -Uri http://localhost:80/api/process -Method POST -Body (@{Fil
 
 ## Managing the REST API Servers
 
-Endpoints will need to be passed to Start-UDRestApi to create a new REST API server. Start-UDRestApi has all the same hosting options as Start-UDDashboard. It supports HTTPS and can be hosted in Azure and IIS. 
+Endpoints will need to be passed to Start-UDRestApi to create a new REST API server. Start-UDRestApi has all the same hosting options as Start-UDDashboard. It supports HTTPS and can be hosted in Azure and IIS.
 
 ```powershell
 Start-UDRestApi -Port 80 -Endpoint $MyEndpoints
