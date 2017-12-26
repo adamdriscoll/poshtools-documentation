@@ -25,6 +25,8 @@
 
 ## PowerShell Pro Tools Documentation
 
+* [Updates](updates.md)
+  * [v1.2.1](v121.md)
 * [Installation and Licensing](powershell-pro-tools-documentation/installation-and-configuration.md)
 * [Packaging](powershell-pro-tools-documentation/packaging.md)
   * [Bundling and Packaging with MSBuild](powershell-pro-tools-documentation/packaging/bundling-and-packaging-with-msbuild.md)
@@ -44,17 +46,5 @@
 * [Code Conversion](powershell-pro-tools-documentation/code-conversion.md)
   * [Paste As](powershell-pro-tools-documentation/code-conversion/paste-as.md)
 
-## Universal Dashboard
 
-* [About Universal Dashboard](powershell-pro-tools-documentation/about-universal-dashboard.md)
-* [Running Dashboards](powershell-pro-tools-documentation/universal-dashboard/running-dashboards.md)
-* [Formatting](powershell-pro-tools-documentation/universal-dashboard/formatting.md)
-* [Charts](powershell-pro-tools-documentation/universal-dashboard/charts.md)
-* [Monitors](powershell-pro-tools-documentation/universal-dashboard/monitors.md)
-* [Tables](powershell-pro-tools-documentation/universal-dashboard/tables.md)
-* [Inputs](powershell-pro-tools-documentation/inputs.md)
-* [Grids](powershell-pro-tools-documentation/universal-dashboard/grids.md)
-* [Multi-Page Dashboards](powershell-pro-tools-documentation/universal-dashboard/multi-page-dashboards.md)
-* [REST APIs](powershell-pro-tools-documentation/rest-apis.md)
-* [Login Pages](authentication.md)
 
