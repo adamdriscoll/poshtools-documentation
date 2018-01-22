@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [v1.2.2](v122.md)
 
 ## PowerShell Tools Documentation
 
@@ -28,6 +27,7 @@
 
 * [Updates](updates.md)
   * [v1.2.1](v121.md)
+  * [v1.2.2](v122.md)
 * [Installation and Licensing](powershell-pro-tools-documentation/installation-and-configuration.md)
 * [Packaging](powershell-pro-tools-documentation/packaging.md)
   * [Bundling and Packaging with MSBuild](powershell-pro-tools-documentation/packaging/bundling-and-packaging-with-msbuild.md)
