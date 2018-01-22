@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [v1.2.2](v122.md)
 
 ## PowerShell Tools Documentation
 
@@ -45,6 +46,4 @@
   * [Visual Studio Code Commands](powershell-pro-tools-documentation/powershell-module/visual-studio-code-commands.md)
 * [Code Conversion](powershell-pro-tools-documentation/code-conversion.md)
   * [Paste As](powershell-pro-tools-documentation/code-conversion/paste-as.md)
-
-
 
