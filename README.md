@@ -24,11 +24,5 @@ The page contains all the documentation for PowerShell Tools for Visual Studio a
   * Obfuscation
 * Code Conversion between C\# and PowerShell
 
-#### Universal Dashboard 
-
-* Create websites with PowerShell
-* Host in the command line, Azure and IIS
-* Create REST APIs with PowerShell
-
 
 
