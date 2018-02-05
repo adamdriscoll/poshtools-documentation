@@ -34,6 +34,7 @@
   * [Package as Executable](powershell-pro-tools-documentation/packaging/package-as-executable.md)
   * [Packaging in Visual Studio Code](powershell-pro-tools-documentation/packaging/packaging-in-visual-studio-code.md)
   * [PSPack.exe](powershell-pro-tools-documentation/packaging/pspackexe.md)
+  * [Installers](installers.md)
 * [User Interface Design](powershell-pro-tools-documentation/code-conversion/user-interface-design.md)
   * [Building a GUI with WPF in Visual Studio](powershell-pro-tools-documentation/code-conversion/user-interface-design/building-a-gui-with-wpf-in-visual-studio.md)
   * [Building a GUI with Windows Forms in Visual Studio](powershell-pro-tools-documentation/code-conversion/user-interface-design/building-a-gui-with-windows-forms-in-visual-studio.md)
