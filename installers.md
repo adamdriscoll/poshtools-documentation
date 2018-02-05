@@ -52,3 +52,27 @@ New-Installer -Product "My First Product" -UpgradeCode '1a73a1be-50e6-4e92-af03-
 ```
 
 Running the above script will product a WXS, WXSOBJ and MSI file in the output directory. The MSI is the only file that you need to provide to your end users. The WXS and WXSOBJ files are artifacts of the Windows Installer XML Toolkit used to generate these installers.
+
+## Adding a shortcut to the desktop 
+
+Shortcuts can be created in any folder using the `New-InstallerShortcut` cmdlet. To create a shortcut, you need to reference the ID of the file you wish to create a shortcut to. The ID parameter of the `New-InstallerFile` cmdlet is optional. When setting the ID, make sure it is unique within the installer. 
+
+```
+New-InstallerFile -Source .\MyTextFile.txt -Id "myTestFile"
+```
+
+Next, you can define where to create the shortcut by putting a call to `New-InstallerShortcut` within a `New-InstallerDirectory` context script block.
+
+```
+New-InstallerDirectory -PredefinedDirectory "DesktopFolder" -Content {
+        New-InstallerShortcut -Name "My Test File" -FileId "myTestFile"
+    }
+```
+
+## Customizing the User Interface
+
+In addition to defining what can go into an installer, you can also define what options and branding you have for your installer. Options include EULAs and images. Use the `New-InstallerUserInterface` cmdlet to set these properties. The result object can be passed to `New-Installer` with the `UserInterface` parameter. 
+
+ ```
+ $UserInterface = New-InstallerUserInterface -Eula (Join-Path $PSScriptRoot 'eula.rtf') -TopBanner (Join-Path $PSScriptRoot "banner.png") -Welcome (Join-Path $PSScriptRoot "welcome.png")
+ ``` 
