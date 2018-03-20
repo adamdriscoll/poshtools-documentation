@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [v1.4.0](v140.md)
 
 ## PowerShell Tools Documentation
 
@@ -27,6 +26,7 @@
 ## PowerShell Pro Tools Documentation
 
 * [Updates](updates.md)
+  * [v1.4.0](v140.md)
   * [v1.2.1](v121.md)
   * [v1.2.2](v122.md)
 * [Installation and Licensing](powershell-pro-tools-documentation/installation-and-configuration.md)
