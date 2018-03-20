@@ -10,39 +10,25 @@ This about file contains information about using hashtables and PSD1 files to c
 
 ### Config File Schema
 
-`@{`
-
-`	Root = "" # The root script. This is required.`
-
-`	OutputPath = "" # The output path for Merge-Script. This is required.`
-
-`	Bundle = @{`
-
-`		Enabled = $true # Whether bundling is enabled`
-
-`		Modules = $true # Whether to bundle imported modules`
-
-`		NestedModules = $true #Whether to bundle modules required by other modules`
-
-`		RequiredAssemblies = $true # Whether to bundle required assemblies `
-
-`	}`
-
-`	Package = @{`
-
-`		Enabled = $true # Whether to package as an executable`
-
-`		Obfuscate = $true # Whether to obfuscate the executable`
-
-`		HideConsoleWindow = $true # Whether to hide the console window after starting the script`
-
-`	}`
-
-`}`
-
-
-
-
+```powershell
+@{
+	Root = "" # The root script. This is required.
+	OutputPath = "" # The output path for Merge-Script. This is required.
+	Bundle = @{
+		Enabled = $true # Whether bundling is enabled
+		Modules = $true # Whether to bundle imported modules
+		NestedModules = $true #Whether to bundle modules required by other modules
+		RequiredAssemblies = $true # Whether to bundle required assemblies 
+		IgnoredModules = @() # Modules to ignore when bundling scripts
+	}
+	Package = @{
+		Enabled = $true # Whether to package as an executable
+		Obfuscate = $true # Whether to obfuscate the executable
+		HideConsoleWindow = $true # Whether to hide the console window after starting the script
+		DotNetVersion = "v4.6.1" # The .NET Framework version to target. The developer pack for that version must be installed on the machine for this to target a particular version. 
+	}
+}
+```
 
 ### Using a config file
 
