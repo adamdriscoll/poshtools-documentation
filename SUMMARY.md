@@ -26,6 +26,7 @@
 ## PowerShell Pro Tools Documentation
 
 * [Updates](updates.md)
+  * [v1.5.1](v151.md)
   * [v1.5.0](v150.md)
   * [v1.4.0](v140.md)
   * [v1.2.1](v121.md)
