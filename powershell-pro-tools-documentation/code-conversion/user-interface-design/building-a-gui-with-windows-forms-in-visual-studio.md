@@ -41,7 +41,7 @@ Adding controls automatically updates the Form.Designer.ps1 file. Do not edit th
 
 ### Adding Event Handlers
 
-To do anything interesting, you’ll need to add event handles. You can access a control’s events by selecting it in the designer and clicking the Event button in the Properties window.
+To do anything interesting, you’ll need to add event handles. You can access a control’s events by selecting it in the designer and clicking the Event button in the Properties window.
 
 ![](https://i1.wp.com/wandering.life/wp-content/uploads/2017/04/events.png?resize=628%2C255)
 
@@ -59,7 +59,7 @@ The event handler will automatically be wired up to your control.
 
 ## Debugging A Form
 
-Once you are ready to test out your form, you can click Start or press F5 from either the designer window or the code-behind window. PoshTools will fire off the script and you can set breakpoints and debug like any other PowerShell script.
+Once you are ready to test out your form, you can click Start or press F5 from either the designer window or the code-behind window. PoshTools will fire off the script and you can set breakpoints and debug like any other PowerShell script.
 
 ![](https://i0.wp.com/wandering.life/wp-content/uploads/2017/04/debuger.png?resize=709%2C237)
 
@@ -69,11 +69,10 @@ And just like that you have a working Windows Form.
 
 ## Accessing Controls Added to the Form
 
-In main circumstances, you’ll want to access a control that you’ve add to the form. You can use the $MainForm.Controls collection to access your control. For example, if you added $lblMyLabel to your form, you could dynamically change the text by using Where-Object to retrieve the label and then setting the value property of $lblMyLabel.
+In many circumstances, you’ll want to access a control that you’ve add to the form. The $MainForm variable will have parameters for each of it's child items. You can access those through the control's name. 
 
-```
-$lblMyLabel = $MainForm.Controsl | Where-Object "Name" -EQ "lblMyLabel"
-$lblMyLabel.Value = "Some Text"
+```powershell
+$MainForm.lblMyLabel.Value = "Some Text"
 ```
 
 ## Conclusion
