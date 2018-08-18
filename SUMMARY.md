@@ -31,6 +31,7 @@
   * [v1.4.0](v140.md)
   * [v1.2.1](v121.md)
   * [v1.2.2](v122.md)
+* [v1.6.0](v160.md)
 * [Installation and Licensing](powershell-pro-tools-documentation/installation-and-configuration.md)
 * [Packaging](powershell-pro-tools-documentation/packaging.md)
   * [Bundling and Packaging with MSBuild](powershell-pro-tools-documentation/packaging/bundling-and-packaging-with-msbuild.md)

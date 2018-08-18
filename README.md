@@ -22,6 +22,7 @@ The page contains all the documentation for PowerShell Tools for Visual Studio a
   * Bundling scripts
   * Packing into executables
   * Obfuscation
+* MSI Installer Cmdlets
 * Code Conversion between C\# and PowerShell
 
 
